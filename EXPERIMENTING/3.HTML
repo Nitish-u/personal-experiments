@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0%;
+    }
+    .parent div{
+        border: 2px solid red;
+        width: inherit;
+        display: inline-block;
+    }
+    .m{
+        margin: auto;
+        display: block;
+        width: inherit;
+    }
+    .l{
+        position: absolute;
+    }
+    .m ul li{
+        display: inline-block;
+        padding: 0;
+        list-style: none;
+        margin: 10px;
+        margin-top: 0%;
+        margin-bottom: 0;
+         
+    }
+    .m ul{
+        margin: 0;
+        padding-inline-start: 0;
+    }
+    .m{
+        margin: inherit;
+    }
+    .r{
+        position: absolute;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="l">
+            left
+        </div>
+        <div class="m">
+            <ul>
+                <li>
+                    NAME
+                </li>
+                <li>
+                    CLASS
+                </li>
+                <li>
+                    ROLL NO.
+                </li>
+                <li>
+                    HOBBIES
+                </li>
+            </ul>
+        </div>
+        <div class="r">
+            right
+        </div>
+    </div>
+</body>
+</html>

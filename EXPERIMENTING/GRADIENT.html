@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        text-align: center;
+        margin-top: 150px;
+    }
+    #btn{
+        /* border: 2px solid black; */
+        padding: 10px 20px 10px 20px;
+        background-size: 0% 100%;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        transition: background-size 500ms;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        background-image: linear-gradient(45deg, rgb(121, 121, 254), rgb(255, 255, 119));
+    }
+    #btn:hover{
+        background-size: 100% 100%;
+        background-position-x: left;
+    }
+</style>
+<body>
+    <span id="btn">
+        hello world
+    </span>
+</body>
+</html>

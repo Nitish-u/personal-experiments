@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+      .prnt{
+          width: fit-content;
+          height: fit-content;
+      }
+    button {
+      margin-left: 45vw;
+      margin-top: 30vh;
+      font-size: 20px;
+      border: none;
+      padding: 10px;
+      border-radius: 20px;
+      background: transparent;
+      background-size: 20px;
+      text-transform: uppercase;
+    }
+    .bck {
+        /* border: 1px solid black; */
+      /* content: "";6++658 */
+      display: inline;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      border-radius: 10px;
+      opacity: 0;
+      z-index: -1;
+      top: 30.5vh;
+      left: 50vh;
+      height: 50px;
+      width: 0;
+      background-image: url(/back.png);
+      transition: width 500ms;
+    }
+     .prnt:hover span{
+      width: 145px;
+      opacity: 1;
+    }
+  </style>
+  <body>
+    <div class="prnt">
+      <span class="bck"></span>
+      <button>start now</button>
+    </div>
+  </body>
+</html>

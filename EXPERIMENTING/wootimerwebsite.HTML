@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wootimer website</title>
+  </head>
+  <style>
+    .main1 {
+      /* margin-top: 20px; */
+      background-image: url(/EXPERIMENTING/bg12.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      color: white;
+    }
+    body {
+      margin: 0%;
+      padding: 0%;
+    }
+    .h1 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .h1 div img {
+      width: 150px;
+    }
+    .h1 div ul li {
+      display: inline-block;
+      margin: 0 15px 0 15px;
+    }
+    .h1 div ul {
+      display: inline-block;
+      padding-inline-start: 0%;
+      margin-top: 25px;
+      margin-bottom: 0;
+    }
+    .dk {
+      display: flex;
+    }
+    .main1 div button {
+      margin-top: 20px;
+      margin-right: 20px;
+      padding: 10px;
+      background-color: rgb(0, 54, 0);
+      color: white;
+      border: 2px solid black;
+    }
+    .bold {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: space-between;
+      /* font-size: 50px; */
+      margin-left: 20%;
+      /* margin-top: 10px; */
+      margin-bottom: 0px;
+      font-weight: bolder;
+      color: white;
+    }
+    .width {
+      font-size: 17px;
+      width: 310px;
+      margin-left: 20%;
+      color: white;
+      /* margin-top: 10px; */
+    }
+    .second {
+      background-image: url(/EXPERIMENTING/bg12.png);
+      background-size: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .para22 {
+      width: 50%;
+      margin: 0%;
+      padding: 0%;
+      margin-top: 10%;
+    }
+    .para22 img {
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
+      margin-bottom: -4px;
+    }
+    .para11 {
+      margin-top: 7%;
+      /* margin-left: 100px; */
+      width: 40%;
+    }
+    .main2 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background-image: url(/EXPERIMENTING/BG222.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    .m1 {
+      width: 30%;
+      margin-left: 20%;
+    }
+    .m1 img {
+      width: 100%;
+    }
+    .m2 {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+    .para2 {
+      width: 80%;
+      margin: 10%;
+      margin-top: 5%;
+      color: white;
+    }
+    .para2 h4 {
+      margin-bottom: 0%;
+      padding-bottom: 0%;
+    }
+    .para2 h6 {
+      margin-top: 0%;
+      padding-top: 0%;
+      color: greenyellow;
+    }
+    .para3 {
+      width: 70%;
+      margin: 15%;
+      margin-top: 0%;
+    }
+    .para3 button {
+      margin-top: 20px;
+      margin-right: 20px;
+      padding: 10px;
+      background-color: rgb(15, 155, 15);
+      color: white;
+      border: 2px solid rgb(15, 155, 15);
+    }
+    .main3 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .n1 {
+      width: 30%;
+      margin-left: 10%;
+    }
+    .n1 button {
+      margin-top: 20px;
+      margin-right: 20px;
+      padding: 10px;
+      background-color: rgb(3, 73, 3);
+      color: white;
+      border: 2px solid rgb(2, 54, 2);
+    }
+    .n2 {
+      width: 44%;
+    }
+    .n2 img {
+      width: 100%;
+      /* image-resolution: unset; */
+      height: 500px;
+      margin-bottom: -4px;
+    }
+    .main4 {
+      background-color: rgb(183, 240, 183);
+      margin: 0%;
+      padding: 0%;
+    }
+    .main4 h3 {
+      text-align: center;
+      margin: 0%;
+      padding: 80px 0 80px 0;
+    }
+    .main41 {
+      display: flex;
+      justify-content: center;
+    }
+    .main41 div {
+      border-right: 2px solid rgb(231, 215, 215);
+      width: 12.5%;
+      padding: 1%;
+      border-bottom: 1px solid rgb(231, 215, 215);
+    }
+    .main41 div img {
+      width: 100%;
+    }
+    .main42 {
+      display: flex;
+      justify-content: center;
+    }
+    .main42 div {
+      width: 12.5%;
+      border-right: 2px solid rgb(231, 215, 215);
+      border-top: 1px solid rgb(231, 215, 215);
+      padding: 1%;
+    }
+    .main42 img {
+      width: 100%;
+    }
+    .main41 h6,
+    .main42 h6 {
+      text-align: center;
+    }
+    .main42 .last,
+    .main41 .last {
+      border-right: none;
+    }
+    .main4 .on button {
+      margin-top: 20px;
+      margin-right: 20px;
+      padding: 10px;
+      background-color: rgb(3, 73, 3);
+      color: white;
+      border: 2px solid rgb(2, 54, 2);
+      display: block;
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .main5 {
+      display: flex;
+      justify-content: center;
+    }
+    .main5 div {
+      width: 25%;
+      margin: 50px 10px 50px 10px;
+    }
+    .main5 div img {
+      width: 100%;
+    }
+    .main5 div a {
+      color: rgb(84, 214, 84);
+    }
+    .main6{
+      background-image: url(/EXPERIMENTING/77.jpg);
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: right;
+      margin-top: 100px;
+      padding-top: 22%;
+    }
+    .main6 .main61 {
+      /* margin-top: 200px; */
+      width: 80%;
+      background-color: rgb(22, 155, 22);
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .main6 .main62 {
+      width: 100%;
+      height: 500px;
+      
+    }
+    .main6 .main61 button {
+      position: absolute;
+      margin-top: 80px;
+      margin-left: 10%;
+      padding: 10px;
+      background-color: rgb(0, 54, 0);
+      color: white;
+      border: 2px solid rgb(0, 54, 0);
+    }
+    .main6 .main61 .main611 {
+      width: 60%;
+      margin-left: 10%;
+      display: inline-block;
+      color: white;
+    }
+    .main6 .main61 .main611 p {
+      font-size: 12px;
+    }
+  </style>
+  <body>
+    <div class="main1">
+      <div class="h1">
+        <div class="dk">
+          <div>
+            <img src="/EXPERIMENTING/logo11.jpg" alt="" />
+          </div>
+          <div>
+            <ul>
+              <li>Why us</li>
+              <li>Products</li>
+              <li>Claims</li>
+              <li>Carriers</li>
+              <li>Find broker</li>
+              <li>Media</li>
+              <li>Wootimer online</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <button class=".btn">Contect us</button>
+        </div>
+      </div>
+    </div>
+    <div class="second">
+      <div class="para11">
+        <h1 class="bold">___</h1>
+        <h1 class="bold">BUILT</h1>
+        <h1 class="bold">YOUR WAY</h1>
+        <p class="width">
+          Truly commited to providing extraordinary tailored services to all of
+          our brokers and their clients.
+        </p>
+      </div>
+      <div class="para22">
+        <img src="/EXPERIMENTING/11.jpg" alt="" />
+      </div>
+    </div>
+    <div class="main2">
+      <div class="m1">
+        <img src="/EXPERIMENTING/22.jpg" alt="" />
+      </div>
+      <div class="m2">
+        <div class="para2">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            perferendis deserunt repudiandae molestiae vel dolore exercitationem
+            aut, animi veniam voluptates eius, molestias nostrum. Odio
+            repellendus nesciunt libero a corrupti voluptate vitae. Error
+            quibusdam iste ea saepe rerum ab similique accusamus.
+          </p>
+          <h4>Jack lee</h4>
+          <h6>Vice president,BFL Canada</h6>
+        </div>
+        <div class="para3">
+          <h3>SPECIALITY INSURANCE & SURETY SOLUTIONS</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+            debitis dolores obcaecati fugit recusandae fugiat tenetur expedita,
+            eos distinctio, error numquam ratione illum repellendus? Minima ea
+            molestias eius odio possimus unde vel nostrum tenetur quod adipisci,
+            deserunt fugit rerum non voluptate placeat quibusdam ad saepe,
+            quaerat consequatur doloremque, maiores aperiam repellat! Eveniet,
+            iusto incidunt esse eos ullam nostrum voluptatum dolorem.
+          </p>
+          <button>Learn more</button>
+        </div>
+      </div>
+    </div>
+    <div class="main3">
+      <div class="n1">
+        <h3>THW VALUE WE KEPT AT WOOTIMER</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam error
+          at ex alias officia fugiat omnis quam deleniti veritatis aperiam quos
+          in et, sequi non excepturi explicabo ipsum eligendi voluptate quaerat
+          aliquam! Quas exercitationem temporibus cupiditate iure delectus enim
+          tempora?
+        </p>
+        <button>Learn About Our Value</button>
+      </div>
+      <div class="n2">
+        <img src="/EXPERIMENTING/33.jpg" alt="" />
+      </div>
+    </div>
+    <div class="main4">
+      <h3>COVERING ALL ACROSS INDUSTRIES</h3>
+      <div class="main41">
+        <div>
+          <img src="/EXPERIMENTING/AGRI.jpg" alt="" />
+          <h6>AGRICULTURE</h6>
+        </div>
+        <div>
+          <img src="/EXPERIMENTING/MEDIA.jpg" alt="" />
+          <h6>MEDIA</h6>
+        </div>
+        <div>
+          <img src="/EXPERIMENTING/CONST.jpg" alt="" />
+          <h6>CONSTRUCTION</h6>
+        </div>
+        <div>
+          <img src="/EXPERIMENTING/EDU.jpg" alt="" />
+          <h6>EDUCATION</h6>
+        </div>
+        <div>
+          <img src="/EXPERIMENTING/FIN.jpg" alt="" />
+          <h6>FINANCE</h6>
+        </div>
+        <div class="last">
+          <img src="/EXPERIMENTING/MAN.jpg" alt="" />
+          <h6>MANUFACTURE</h6>
+        </div>
+      </div>
+      <div class="main42">
+        <div>
+          <img src="/EXPERIMENTING/NP.jpg" alt="" />
+          <h6>NON-PROFIT</h6>
+        </div>
+        <div>
+          <img src="/EXPERIMENTING/OIL.jpg" alt="" />
+          <h6>OIL & GAS</h6>
+        </div>
+        <div>
+          <img src="/EXPERIMENTING/RETAIL.jpg" alt="" />
+          <h6>RETAIL</h6>
+        </div>
+        <div>
+          <img src="/EXPERIMENTING/SERV.jpg" alt="" />
+          <h6>SERVICES</h6>
+        </div>
+        <div>
+          <img src="/EXPERIMENTING/UTI.jpg" alt="" />
+          <h6>UTILITIES</h6>
+        </div>
+        <div class="last">
+          <img src="/EXPERIMENTING/TECH.jpg" alt="" />
+          <h6>TECHNOLOGY</h6>
+        </div>
+      </div>
+      <div class="on">
+        <button>Learn More</button>
+      </div>
+    </div>
+    <div class="main5">
+      <div>
+        <img src="/EXPERIMENTING/44.jpg" alt="" />
+        <h3>NEWS</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          reiciendis dolore dicta eligendi eum ad id iusto iure explicabo ea?
+        </p>
+        <a href="#">Read our newest upadtes</a>
+      </div>
+      <div>
+        <img src="/EXPERIMENTING/55.jpg" alt="" />
+        <h3>PRODUCTS</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          reiciendis dolore dicta eligendi eum ad id iusto iure explicabo ea?
+        </p>
+        <a href="#">More on our Products</a>
+      </div>
+      <div>
+        <img src="/EXPERIMENTING/66.jpg" alt="" />
+        <h3>CARRIERS</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          reiciendis dolore dicta eligendi eum ad id iusto iure explicabo ea?
+        </p>
+        <a href="#">Join the team</a>
+      </div>
+    </div>
+    <div class="main6">
+        <div class="main61">
+          <div class="main611">
+            <h1>DISCOVER WOOTIMER</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              veritatis ratione ut blanditiis perferendis molestiae, fugit
+              cupiditate dicta reprehenderit quasi repellendus? Ducimus iste
+              omnis maxime consectetur necessitatibus, cum voluptatum?
+              Doloremque aliquam nisi magnam labore iusto. Dolores ipsum
+              asperiores perspiciatis numquam.
+            </p>
+          </div>
+          <button>contact us</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

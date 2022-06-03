@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>making navigation bar</title>
+</head>
+<body>
+    <style>
+        nav{
+            border: 3px solid yellow;
+            overflow: auto;
+            background-color: rgb(80, 69, 69);
+            border-radius: 40px;
+        }
+        .nav li{
+            float: left;
+            list-style: none;
+            margin: 12px 32px;
+        }
+        a{
+            text-decoration: none;
+            color: skyblue;
+            
+        }
+        a:hover{
+            color: lawngreen;
+            text-transform: capitalize;
+        }
+        ul{
+            margin: 0%;
+        }
+        .nav input{
+            border: 2px solid gold;
+            float: right;
+            margin: 10px 20px;
+            border-radius: 10px;
+        }
+        input:hover{
+            border: `2px solid grey;
+        }
+        
+    </style>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="" class="lnks" id="1">menu</a></li>
+                <li><a href="" class="lnks" id="2">home</a></li>
+                <li><a href="" class="lnks" id="3">services</a></li>
+                <li><a href="" class="lnks" id="4">about</a></li>
+                <input type="text" name="search box" id="srch" placeholder="search in site">
+            </ul>
+            </nav>
+    </header>
+</body>
+</html>

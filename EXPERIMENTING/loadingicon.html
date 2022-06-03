@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .parent {
+      /* border: 2px solid black; */
+      width: 500px;
+      display: block;
+      height: 500px;
+      margin: auto;
+    }
+    #f1 {
+      border-bottom: 10px solid rgb(0, 145, 255);
+      border-radius: 50%;
+      width: 165px;
+      height: 180px;
+      margin: auto;
+      position: absolute;
+      top: 140px;
+      left: 180px;
+      animation: roater1 1s linear infinite;
+      /* opacity: 0.7; */
+    }
+    #f2 {
+      border-bottom: 10px solid rgb(0, 204, 255);
+      border-radius: 50%;
+      width: 130px;
+      height: 135px;
+      margin: auto;
+      position: absolute;
+      top: 160px;
+      left: 195px;
+      animation: roater2 1s linear infinite;
+    }
+    #f3 {
+      border-bottom: 10px solid rgb(0, 132, 255);
+      border-radius: 50%;
+      width: 90px;
+      height: 80px;
+      margin: auto;
+      position: absolute;
+      top: 190px;
+      left: 215px;
+      animation: roater1 1s linear infinite;
+    }
+    @keyframes roater1 {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes roater2 {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-360deg);
+      }
+    }
+    .txt {
+      position: absolute;
+      top: 330px;
+      left: 170px;
+      font-size: 50px;
+      color: rgb(164, 164, 255);
+    }
+    #dot1{
+      animation: blink 4s forwards infinite;
+      /* transform: ; */
+    }
+    #dot2{
+      animation: blink 4s forwards infinite;
+      animation-delay: 1s;
+    }
+    #dot3{
+      animation: blink 4s forwards infinite;
+      animation-delay: 2s;
+    }
+    #dot4{
+      animation: blink 4s forwards infinite;
+      animation-delay: 3s;
+    }
+    @keyframes blink {
+      from{
+        opacity: 1;
+      }
+      to{
+        opacity: 0;
+      }
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <div id="f1"></div>
+      <div id="f2"></div>
+      <div id="f3"></div>
+      <div class="txt">
+        Loading <span id="dot1">.</span>
+        <span id="dot2">.</span>
+        <span id="dot3">.</span>
+        <span id="dot4">.</span>
+      </div>
+    </div>
+  </body>
+</html>

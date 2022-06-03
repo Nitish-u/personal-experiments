@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        background-image: url(/niklas-hamann-RtQOEakv4uk-unsplash.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 7000px;
+    }
+    header{
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        width: 100%;
+        opacity: 0.7;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    .nav{
+        /* border: 2px solid red; */
+    }
+    #mid ul li{
+        display: inline-block;
+        list-style: none;
+        /* padding: 30px; */
+        margin: 4% 30px 0 30px ;
+        padding-top: 0;
+        padding-bottom: 0;
+        color: white;
+        font-size: inherit;
+        opacity: 1;
+    }
+    #mid ul{
+        padding-inline-start: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #mid ul li:hover{
+        text-decoration: underline;
+        background-color: gray;
+        border-radius: 20px;
+        color: black;
+        padding: 0 10px 0 10px;
+    }
+    #mid{
+        margin-top: 20px;
+    }
+    #left img{
+        margin-left: 10px;
+        width: 100px;
+        filter: invert(100);
+        margin-top: 5px;
+        margin-bottom: 0%;
+    }
+    #left p{
+        margin-top: 0;
+        /* border: 2px solid red; */
+        width: 120px;
+        text-align: center;
+        padding-top: 0;
+        margin-bottom: 5px;
+    }
+    .form{
+        /* border: 2px solid rgb(2, 2, 2); */
+        width: 200px;
+        text-align: center;
+        padding: 50px;
+        padding-bottom: 35px;
+        background-image: url(/form.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        top: 3%;
+        /* left: 30px; */
+        border-radius: 20px;
+        opacity: 0.7;
+        
+    }
+    .second{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 150px;
+    }
+    .form p{
+        text-align: center;
+        margin-top: 0%;
+    }
+    .form input{
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        opacity: 0.5;
+    }
+    .btn{
+        width: 85%;
+        border-radius: 10px;
+        opacity: 0.5;
+    }
+    #right{
+        position: relative;
+        top: 20px;
+        right: 20px;
+    }
+    .btnr{
+        border-radius: 20px;
+        padding: 2px 10px 2px 10px;
+        background-color: rgb(102, 87, 87);
+    }
+    .photo{
+        width: 300px;
+        padding-right: 150px;
+        border-radius: 20px;
+    }
+    .middle{
+        background-color: gray;
+        opacity: 0.5;
+        border-radius: 20px;
+        margin-right: 0;
+        padding-right: 0%;
+    }
+</style>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav" id="left">
+                <img src="/LOGOMAKING (2).png" alt="">
+                <p>photography paathshala</p>
+            </div>
+            <div class="nav" id="mid">
+                <ul>
+                    <li>
+                        HOME
+                    </li>
+                    <li>
+                        ABOUT
+                    </li>
+                    <li>
+                        POSTS
+                    </li>
+                    <li>
+                        HELP
+                    </li>
+                </ul>
+            </div>
+            <div class="nav" id="right">
+                <button class="btnr">contact us</button>
+            </div>
+        </div>
+     </header>
+     <div class="second">
+         <div class="form">
+             <p>join us</p>
+             <form action="noaction.php">
+                 <input type="text" placeholder="name">
+                 <input type="text" placeholder="spaciality">
+                 <input type="text" placeholder="experience">
+                </form>
+                <button class="btn">SUBMIT</button>
+            </div>
+            <div class="middle">
+                <h1> ABHAY PRATAP SINGH</h1>
+                <ul>
+                    <li>"यथा दृष्टि तथा सृष्टि"</li>
+                    <li>EX-KVIAN</li>
+                    <li>CT UNIV.</li>
+                    <li>B.TECH. CSE (III)</li>
+                    <li>PHOTOGRAPHER</li>
+                </ul>
+            </div>
+            <div>
+                <img src="/ABHAYPIC.jpg" alt="" class="photo">
+            </div>
+         </div>
+</body>
+</html>

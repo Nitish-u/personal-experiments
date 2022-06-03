@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restront website</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      text-transform: capitalize;
+    }
+    a:active {
+      color: rgb(17, 129, 227);
+    }
+    /* quote tageting */
+    #quote-1 {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-color: aqua;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    #quote-2 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20vh;
+      padding-bottom: 0;
+      width: 100%;
+      height: 72vh;
+      text-align: center;
+      background-color: rgb(214, 254, 254);
+      padding-bottom: 10px;
+    }
+    #nav-1 {
+      color: black;
+      text-shadow: none;
+      font-size: 22px;
+      margin-top: -3px;
+      margin-left: -23px;
+      text-shadow: 1px 1px aqua;
+    }
+    #q{
+        width: 90%;
+    }
+    #quote-3 {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    /* targetting navigation container */
+    .cont-1 {
+      display: grid;
+      grid-template-columns: 5rem 3rem 9rem 5rem 5rem;
+      column-gap: 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      color: aqua;
+      text-shadow: 1px 1px black;
+      padding-left: 30px;
+    }
+    /* targetting types container */
+    .cont-2 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: 9em 9em 9em;
+      justify-content: center;
+      column-gap: 8rem;
+    }
+    /* targetting products */
+    #product-1 img {
+      display: block;
+      width: 30vw;
+      height: 30vh;
+      margin: auto;
+      border: 1px solid saddlebrown;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    #product-2 img {
+      display: block;
+      width: 30vw;
+      height: 30vh;
+      margin: auto;
+      border: 1px solid saddlebrown;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    /* targetting buttons */
+    button {
+      padding: 0.8rem 2rem 0.8rem 2rem;
+      border: 1px solid black;
+      border-radius: 25px;
+      font-weight: bolder;
+      cursor: pointer;
+      color: rgb(0, 251, 255);
+      /* text-shadow: 1px 1px black; */
+      font-size: 20px;
+      background-color: rgb(0, 0, 0);
+    }
+    button:hover {
+      background-color: aqua;
+      font-style: italic;
+      color: black;
+    }
+
+    /* targetting see menu button */
+    #menu {
+      display: grid;
+      justify-content: center;
+    }
+    /* targetting form section */
+    form {
+      border: 1px solid black;
+      display: block;
+      width: 30vw;
+      margin: auto;
+      border-radius: 10px;
+    }
+    form input {
+      margin: auto;
+      width: 26vw;
+      display: block;
+      margin-bottom: 3vh;
+      border: 1px solid black;
+      text-align: center;
+      font-size: 12px;
+      text-transform: lowercase;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    #i1 {
+      margin-top: 3vh;
+    }
+    /* button active effect */
+    /* #btn1:active{
+
+      }
+      .btn1:active{}
+      .btn1:active{} */
+    p {
+      font-size: 94px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    #s1 {
+      color: aqua;
+    }
+    #s2 {
+      color: aqua;
+    }
+    .pn {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 20px;
+    }
+    .t {
+      padding: 0.6rem 0.9rem;
+      border: 1px solid grey;
+      border-radius: 10px;
+    }
+    #a1 {
+      background-color: aqua;
+      margin-left: 0.9rem;
+    }
+    #a2 {
+      background-color: aqua;
+      margin-left: 0.9rem;
+    }
+    #sbtn {
+      width: 10vw;
+      padding: 0.5rem;
+      border: none;
+      background-color: aqua;
+      border-radius: 15px;
+    }
+    .price {
+      color: aqua;
+      text-shadow: 0.4px 0.4px black;
+    }
+    .cont-3 {
+      height: 50vh;
+      display: grid;
+      row-gap: 0;
+      grid-template-rows: 1vh 40vh;
+      align-items: center;
+      padding-top: 10vh;
+      grid-gap: 0;
+    }
+    .copyright {
+      text-align: center;
+      background-color: rgb(176, 244, 244);
+      padding: 5px;
+      color: rgb(108, 105, 255);
+      text-shadow: 0.4px 0px black.;
+      margin-bottom: 0;
+    }
+  </style>
+  <body>
+    <div id="quote-1">We are available. <a href="#">Order now</a></div>
+    <div class="cont-1">
+      <div id="nav-1">EATMORE</div>
+      <div id="nav-2">MENU</div>
+      <div id="nav-3">OUR FRANCHISEE</div>
+      <div id="nav-4">CONTACT</div>
+      <div id="nav-5">ABOUT US</div>
+    </div>
+    <div id="quote-2">
+      <p id="q">
+        There is no love <span id="s1">sincere</span> than the
+        <span id="s2"> love of food.</span>
+      </p>
+      <br />
+      EATMORE Restrants opening soon......
+    </div>
+    <div class="cont-2">
+      <div id="type-1"><button id="btn1">BURGER</button></div>
+      <div id="type-2"><button id="btn2">PIZZA</button></div>
+      <div id="type-3"><button id="btn3">DRINKS</button></div>
+    </div>
+    <div id="product-1"><img src="/EXPERIMENTING/b1.jpg" alt="EATMORE" /></div>
+    <p class="pn">
+      Lamb burgers <br />
+      <span class="price">$14.00 USD </span> <br />
+      Lorem ipsum dolor sit amet, <br />
+      consectetur adipisicingperspiciati <br />
+      <br /><span class="t">1</span><span class="t" id="a1">Add To Cart</span>
+    </p>
+    <div id="product-2"><img src="/EXPERIMENTING/b2.jpg" alt="EATMORE" /></div>
+    <p class="pn">
+      Crunchy Chicken and Fish burgers <br />
+      <span class="price">$15.00 USD </span> <br />
+      Lorem ipsum dolor sit amet, <br />
+      consectetur adipisicingperspiciati <br />
+      <br />
+      <span class="t">1</span><span class="t" id="a2">Add To Cart</span>
+    </p>
+    <div id="menu"><button>SEE MENU</button></div>
+    <div class="cont-3">
+      <div id="quote-3">REGISTER FOR LATEST UPDATES</div>
+      <div id="form">
+        <form action="#">
+          <input id="i1" type="text" placeholder="NAME" />
+          <input type="text" placeholder="ADDRESS" />
+          <input type="text" placeholder="E-MAIL" />
+          <input type="text" placeholder="MORE ABOUT YOU" />
+          <input type="number" placeholder="m. number" />
+          <input type="button" value="submit" id="sbtn" />
+        </form>
+      </div>
+      <div class="copyright">copyright 'Act-2002'</div>
+    </div>
+  </body>
+</html>

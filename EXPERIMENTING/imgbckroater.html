@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        margin-top: 30%;
+        border-radius: 50%;
+    }
+    div{
+        width: 220px;
+        height: 220px;
+        /* background-color: rgb(139, 139, 139); */
+        position: relative;
+        left: 33.4vw;
+        top: -31vh;
+        z-index: -1;
+        border-radius: 50%;
+        border: 10px solid rgb(255, 255, 255);
+        border-bottom: 10px solid rgb(118, 0, 145);
+        border-top: 10px solid rgb(118, 0, 145);
+        animation: roater 3s linear infinite;
+    }
+    @keyframes roater {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <img src="/spiderman.jpg" alt="spiderman">
+    <div class="background"></div>
+</body>
+</html>

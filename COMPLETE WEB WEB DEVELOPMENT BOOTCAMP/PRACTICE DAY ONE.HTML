@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE DAY ONE </title>
+</head>
+<body>
+    <a id="lnk" href="https://google.com" target="_blank">GOOGLE</a>
+    <br><hr>
+    <img src="https://media.istockphoto.com/photos/pen-picture-id1059543698" alt="lagta hai load nahi hui image" srcset="" width="6%"  id="img">
+    <hr>
+    <img src="Krishna.jpg" alt="">
+    <style>
+        #lnk{
+            border: 2px solid rgb(0, 172, 252);
+            width: 150px;
+           
+        }
+        .para{
+            background-color: rgb(136, 250, 6);
+            border: 5px solid black;
+            border-radius: 5px;
+            padding-left: 5px; }
+            .hd{
+                border: 2px solid rgb(0, 0, 0);
+                width: 150px;
+                border-radius: 5px;
+                background-color: rgb(250, 12, 171);
+                padding-left: 10PX;
+                box-sizing: border-box;
+               
+                /* background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1000w,f_auto,q_auto:best/streams/2013/March/130326/1C6639340-google-logo.jpg);
+                background-size: 150px 100px;
+                BGIM */
+            }
+            #img{
+                border: 2px solid gold;
+            }
+            #ta{
+                background-image: url(
+                    https://dougalleninstitute.org/wp-content/uploads/2016/04/open-space.png
+                );
+                background-size: 900px 170px;
+            }
+            #frm{
+                border: 2px solid black;
+                padding: 9px;
+                box-sizing: border-box;
+                background-color:  rgb(0 248 255);
+            }
+            #ul{
+                border: 2px dotted black;
+                background-color: rgb(0, 225, 255);
+            }
+            #ol{
+                border: 5px double black;
+                background-color: grey;
+            }
+    </style>
+    <div class="hd">
+    <h1 style="color:red;" >heading 1</h1>
+    <h2 style="color:blue;" >heading 2</h2>
+    <h3 style="color:green;" >heading 3</h3>
+    <h4 style="color:yellow;" >heading 4</h4>
+    <h5 style="color: pink;" >heading 5</h5>
+    <h6 style="color: rgb(180, 177, 11);" >heading 6</h6></div>
+    <hr>   
+    <div id="div">
+    <p class="para" > <strong> Lorem 
+    </strong> ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quam eum obcaecati iste odit nobis tempora ullam voluptates doloribus voluptas dicta quae, omnis, inventore voluptate praesentium at tempore, aperiam sequi eius alias! Consequatur quo voluptatum molestias, eius repellendus iure at.</p>
+    <p class="para" ><strong>Lorem </strong>ipsum dolor sit amet, consectetur adipisicing elit. Vel velit laborum ullam qui ea, quis soluta, molestiae nemo labore fugit amet cum vitae inventore repellat enim quas nobis dolorem eos!</p>
+    <p class="para" ><strong>Lorem </strong>ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi dolores eaque officiis inventore eius iste iure ex magnam quas.</p>
+    <p class="para" ><strong>Lorem </strong>ipsum dolor sit amet consectetur adipisicing elit. Voluptates, error?</p></div>
+    <hr>
+    <div id="ul">
+    <ul type= "disc">
+        <li>this is the first item of unordered list.</li>
+    </ul>
+    <ul type ="square">
+        <li>this is the second item of unordered list.</li>
+    </ul>
+    <ul type ="circle">
+        <li>this is the third item of unordered list.</li>
+    </ul></div>
+    <hr>
+    <div id="ol">
+    <ol type ="1">
+        <li>
+            this is first item of ordered list.
+        </li>
+    </ol>
+    <ol type ="I">
+        <li>
+            this is second item of ordered list.
+        </li>
+    </ol>
+    <ol type ="i">
+        <li>
+            this is third item of ordered list.
+        </li>
+    </ol>
+    <ol type ="a">
+        <li>
+            this is forth item of ordered list.
+        </li>
+    </ol>
+    <ol type ="A">
+        <li>
+            this is fifth item of ordered list.
+        </li>
+    </ol></div>
+   <hr>
+   <form id="frm" action="backend.php">
+       <div>
+       <label for="name">name:</label>
+            <input type="text" id="name">
+       </div>
+       <br>
+       <div>
+           <label for="email">email:</label>
+          <input type="email" name="myemail" id="email">
+       </div>
+       <br>
+       <div>
+           <label for="age">age:</label>
+           <input type="number" id="age">
+       </div>
+       <br>
+       <div>
+           <label for="qualifications">qualifications:</label>
+           <input type="text">(other then required)
+       </div>
+       <br>
+       <div>
+           <label for="date of birth">D.O.B.</label>
+           <input type="date" name="mydate of birth" id="date of birth">
+       </div>
+       <br>
+       <div>
+           <label for="bonas">bonas:</label>
+           <input type="number" id="bonas">
+       </div>
+       <br>
+       <div>
+           <label for="aye">are you eligible:</label>
+           <input type="checkbox" name="myeligiblity" id="aye" checked>
+       </div>
+       <br>
+       <div>
+           gender:male<input type="radio" name="mygender" checked>  female<input type="radio" name="mygender"> other <input type="radio" name="mygender">
+       </div>
+       <br>
+       <div>
+           write about yourself: <br><textarea id="ta" name="mytext" cols="52" rows="10"></textarea>
+       </div>
+       <div>
+       <input type="submit" value="submit now">
+       <input type="reset" value="reset now">
+       </div>
+    </form>
+    <hr>
+    <table border="10px">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>role no.</th>
+            <th>class</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>lal</td>
+            <td>001</td>
+            <td>+2</td>
+        </tr>
+        <tr>
+            <td>bal</td>
+            <td>011</td>
+            <td>+2</td>
+        </tr>
+        <tr>
+            <td>pal</td>
+            <td>111</td>
+            <td>+2</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
