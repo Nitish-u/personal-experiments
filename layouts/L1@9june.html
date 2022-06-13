@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container1 {
+      display: grid;
+      height: fit-content;
+      width: 100%;
+      background-color: red;
+      grid-gap: 1%;
+      grid-row-gap: 1vh;
+      grid-template-rows: 5vh 94vh 39vh 39vh 19vh 57.5vh auto;
+      grid-template-columns: 10% 10% 10% 10% 23% 6% 12% 12%;
+      grid-column: 9 / span 8;
+    }
+    .item {
+      height: 5vh;
+      background-color: rgb(0, 213, 255);
+    }
+    #item9 {
+      grid-column: 1 / span 8;
+      height: auto;
+    }
+    #item10 {
+      position: absolute;
+      width: 15%;
+      left: 80%;
+      top: 85%;
+      border: 2px solid black;
+    }
+    #item11 {
+      grid-column: 1 / span 8;
+      height: 39vh;
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      grid-column: 1 / span 8;
+    }
+    #item12 {
+      display: inline-block;
+      width: 15%;
+      border: 2px solid rgb(6, 6, 6);
+      height: auto;
+      padding: 5px;
+      margin: 5px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    #item13 {
+      display: inline-block;
+      height: auto;
+      width: 15%;
+      border: 2px solid rgb(6, 6, 6);
+      padding: 5px;
+      margin: 5px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    #item14 {
+      display: inline-block;
+      width: 15%;
+      border: 2px solid rgb(6, 6, 6);
+      padding-top: 0;
+      padding: 5px;
+      height: auto;
+      margin: 5px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    #item15 {
+      display: inline-block;
+      width: 15%;
+      border: 2px solid rgb(6, 6, 6);
+      padding: 5px;
+      height: auto;
+      margin: 5px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .btn2{
+        grid-column: 1 / span 8;
+    }
+    #item16{
+        height: 19vh;
+    }
+    #item17{
+        grid-column: 1 / span 8;
+        height: 56vh;
+    }
+    .icons2{
+        grid-column: 1 / span 8;
+    }
+    #item18, #item19, #item20, #item21{
+        width: 20%;
+        display: inline-block;
+        margin:2%;
+        height: 38vh;
+        margin: 0 2% 2% 2%;
+    }
+  </style>
+  <body>
+    <div class="container1">
+      <div class="item" id="item1"></div>
+      <div class="item" id="item2"></div>
+      <div class="item" id="item3"></div>
+      <div class="item" id="item4"></div>
+      <div class="item" id="item5"></div>
+      <div class="item" id="item6"></div>
+      <div class="item" id="item7"></div>
+      <div class="item" id="item8"></div>
+      <div class="item" id="item9"></div>
+      <div class="item" id="item10">btn1</div>
+      <div class="item" id="item11"></div>
+      <div class="icons">
+        <div class="item" id="item12">
+          icon1 Lorem, ipsum dolor sit amet consectetur adipisicing deleniti facere saepe beatae voluptas
+          laudantium debitis delectus magni pariatur placeat ad?
+        </div>
+        <div class="item" id="item13">
+          icon2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Dolorem inventore sint hic  eveniet dolorem velit
+        </div>
+        <div class="item" id="item14">
+          icon3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.te. Magni eius
+          necessitatibus similique doloribus, ipsam eveniet dolorem velit
+        </div>
+        <div class="item" id="item15">
+          icon4 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Dolorem ius
+          necessitatibus similique doloribus, ipsam eveniet dolorem velit
+        </div>
+      </div>
+      <div class="btn2">
+        <div class="item" id="item16"></div>
+      </div>
+      <div class="item" id="item17"></div>
+      <div class="icons2">
+      <div class="item" id="item18"></div>
+      <div class="item" id="item19"></div>
+      <div class="item" id="item20"></div>
+      <div class="item" id="item21"></div>
+    </div>
+    </div>
+  </body>
+</html>

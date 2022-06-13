@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menuslidebar</title>
+  </head>
+  <style>
+    .group {
+      position: absolute;
+      display: flex;
+      transition: margin-left 1s;
+      margin-left: -205px;
+      cursor: pointer;
+    }
+
+    .menu {
+      width: fit-content;
+      height: fit-content;
+      background-image: linear-gradient(to top right, #5375ee, #53c0ee  );
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    #checkbox {
+      position: absolute;
+      display: none;
+    }
+
+    #checkbox:checked ~ .group {
+      margin-left: 0;
+    }
+
+    label {
+      margin-left: 10px;
+      padding: 6px;
+      border-radius: 15px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      cursor: pointer;
+      height: fit-content;
+      background-color: #53c0ee;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      margin: 15px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    img {
+      border-radius: 5px;
+      width: 20px;
+      margin-right: 5px;
+      padding: 3px;
+      position: relative;
+    }
+
+    #intro {
+      margin-right: 0;
+      border: 2px solid black;
+      top: 0%;
+      border-radius: 10px;
+      width: 50px;
+      height: 50px;
+      filter: contrast(1.8);
+    }
+
+    .parent{
+      display: flex;
+      margin-top: 35px;
+    }
+
+    #intro-txt{
+      margin-left: 10px;
+      margin-top: 20px;
+    }
+
+    #small{
+      font-size: 12px;
+    }
+    .dots{
+      margin-left: 15px;
+      font-size: 90px;
+      position: absolute;
+      top: -50px;
+    }
+    #dot-1,
+    #dot-2,
+    #dot-3{
+      position: absolute;
+      color: red;
+    }
+    #dot-2{
+      left: 12px;
+      color: yellow;
+    }
+    #dot-3{
+      left: 24px;
+      color: greenyellow;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <input type="checkbox" name="checkbox" id="checkbox" />
+      <div class="group">
+        <div class="menu">
+          <div class="dots">
+            <span id="dot-1">.</span>
+            <span id="dot-2">.</span>
+            <span id="dot-3">.</span>
+          </div>
+          <a href="#" id="link-1">
+            <div class="parent">
+            <span>
+              <img src="avatar.jpg" alt="avtar" id="intro" />
+            </span>
+            <span id="intro-txt"><span id="small"> Hello &#128075</span> <br>Nitish designs</span>
+          </div>
+          </a>
+          <hr />
+          <a href="#" id="link-2">
+            <img src="dashboard-5486.svg" alt="Database">
+            Database
+          </a>
+          <a href="#" id="link-3">
+            <img src="friends.svg" alt="friends">
+            Online Friends</a>
+          <a href="#" id="link-4">
+            <img src="chat-svgrepo-com.svg" alt="Chat">
+            Chat</a>
+          <a href="#" id="link-5">
+            <img src="trophy-svgrepo-com.svg" alt="Trophy">
+            Trophy</a>
+          <a href="#" id="link-6">
+            <img src="medal-svgrepo-com.svg" alt="medal">
+            Daily Challenges</a>
+          <a href="#" id="link-7">
+            <img src="notification-svgrepo-com.svg" alt="Notifications">
+            Notifications</a>
+          <a href="#" id="link-8">
+            <img src="cloud-svgrepo-com.svg" alt="icloud">
+            icloud</a>
+          <hr />
+          <a href="#" id="link-9">
+            <img src="download-svgrepo-com.svg" alt="Downloads">
+            Downloads</a>
+          <a href="#" id="link-10">
+            <img src="fifa.jpg" alt="fifa2022">
+            FIFA 2022</a>
+          <a href="#" id="link-11">
+            <img src="poker.jpg" alt="poker">
+            Poker Texas Holdem</a>
+          <a href="#" id="link-12">
+            <img src="candycrush.jpg" alt="candycrush">
+            Candy Crush</a>
+          <a href="#" id="link-13">
+            <img src="pubg.jpg" alt="pubg">
+            PUBG Mobile</a>
+          <a href="#" id="link-14">
+            <img src="ludo.jpg" alt="ludo">
+            Ludo King</a>
+        </div>
+        <label for="checkbox" class="label">menu </label>
+      </div>
+    </div>
+  </body>
+</html>
