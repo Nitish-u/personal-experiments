@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js"></script>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 30px;
+      margin: 5px 20px;
+      padding: 20px 20px;
+      cursor: pointer;
+      position: relative;
+      height: auto;
+      transition: transform 500ms, scale 500ms;
+    }
+    #first {
+      margin-left: 80px;
+    }
+    #last {
+      margin-right: 80px;
+    }
+    .menubar {
+      background-color: rgb(65, 65, 65);
+      border-radius: 50px;
+      width: fit-content;
+    }
+    a:hover img {
+      transform: translateY(-15px) scale(1.2);
+      background: linear-gradient(to bottom right, #0100ec,#fb36f4);
+      border-radius: 30px;
+    }
+    .parent{
+      height: fit-content;
+    }
+    .back{
+      width: 630px;
+      position: relative;
+      left: -10px;
+      border-radius: 50px;
+      top: -84px;
+      background: linear-gradient(to bottom right, #0100ec,#fb36f4);
+      height: 100px;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 900ms;
+    }
+    .parent:hover .back{
+      opacity: 1;
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <div class="menubar">
+        <a href="#" id="first"><img src="house.png" alt="" /></a>
+        <a href="#"><img src="magnifying-glass.png" alt="" /></a>
+        <a href="#"><img src="heart.png" alt="" /></a>
+        <a href="#" id="last"><img src="user.png" alt="" /></a>
+      </div>
+      <div class="back"></div>
+    </div>
+  </body>
+</html>

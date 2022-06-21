@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #5375ee, #53c0ee);
+    }
+    /* .card {
+      border: 2px solid lightgray;
+    } */
+    img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      margin: auto;
+      transition: transform 500ms;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: -50px;
+      z-index: -1;
+      overflow: hidden;
+      overflow-x: hidden;
+      height: 100px;
+      width: 170px;
+      /* border: 2px solid black; */
+      background-color: #fff;
+      /* width: fit-content;
+      height: fit-content; */
+      border-radius: 20px;
+      transition: width 500ms, height 500ms;
+    }
+    .child-1 {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    .child-1 :is(p, h4) {
+      margin: 0;
+      padding: 0;
+    }
+    .child-1 p {
+      font-size: 13px;
+      color: rgb(145, 145, 145);
+    }
+    li {
+      list-style: none;
+      width: fit-content;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      text-align: center;
+      width: 70px;
+      margin: 0;
+      padding: 0 10px;
+      font-weight: bold;
+    }
+    .sections {
+      font-size: 13px;
+      font-weight: normal;
+      color: rgb(145, 145, 145);
+    }
+    .child-3 {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    button {
+      padding: 5px 10px;
+      border-radius: 3px;
+      margin: 20px 0;
+    }
+    #btn1 {
+      border: 2px solid rgb(255, 0, 183);
+      background-color: rgb(255, 0, 183);
+      color: white;
+    }
+    #btn2 {
+      border: 2px solid gray;
+      color: gray;
+    }
+    .card:hover img {
+      transform: scale(2);
+    }
+    .card:hover .info {
+      width: 290px;
+      height: 340px;
+      top: -100px;
+    }
+    .card:hover .child-1 {
+      margin-top: 170px;
+    }
+  </style>
+  <body>
+    <div class="card">
+      <img src="carsss.jpg" alt="car" />
+      <div class="info">
+        <div class="child-1">
+          <h4>Alina Smith</h4>
+          <p>Senior UX/UI Designer</p>
+        </div>
+        <div class="child-2">
+          <span class="account_details">
+            <li>
+              <ul>
+                324
+              </ul>
+              <ul class="sections">
+                Posts
+              </ul>
+            </li>
+          </span>
+          <span class="account_details">
+            <li>
+              <ul>
+                120k
+              </ul>
+              <ul class="sections">
+                Followers
+              </ul>
+            </li>
+          </span>
+          <span class="account_details">
+            <li>
+              <ul>
+                239
+              </ul>
+              <ul class="sections">
+                Following
+              </ul>
+            </li>
+          </span>
+        </div>
+        <div class="child-3">
+          <button id="btn1">Follow</button>
+          <button id="btn2">Message</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
