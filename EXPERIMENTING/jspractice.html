@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/JAVASCRIPT FILES/index.js"></script>
+</head>
+<style>
+    input{
+        text-align: center;
+        border-radius: 10px;
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-left: 15px;
+        cursor: pointer;
+        padding: 10px 10px;
+        font-weight: bold;
+    }
+    button{
+        margin-left: 20px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 10px 15px;
+    }
+</style>
+<body>
+    <h1>Making calculator</h1>
+    <h3>First box is to tell what you want to calc.</h3>
+    <ul>
+        <li>Put "add" for addition</li>
+        <li>Put "sub" for subtraction</li>
+        <li>Put "mult" for multiplication</li>
+        <li>Put "divide" for division</li>
+    </ul>
+    <h3>Second box for the first number.</h3>
+    <h3>Third box  for the second number.</h3>
+    <input type="text" id="first box" placeholder="TYPE">
+    <input type="text" id="second box" placeholder="First number">
+    <input type="text" id="third box" placeholder="Second number">
+    <button onclick="myfun()">Submit</button>
+</body>
+</html>

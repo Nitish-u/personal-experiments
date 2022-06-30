@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .parent {
+      margin: 20px;
+      text-transform: uppercase;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    label {
+      opacity: 0;
+      position: absolute;
+      overflow: hidden;
+    }
+    .container{
+      border: 2px solid black;
+      width: fit-content;
+      padding: 2px 20px;
+      border-radius: 20px;
+      overflow: hidden;
+      font-size: 50px;
+    }
+    #txt-2 {
+      position: absolute;
+    }
+    #check:checked ~.container {
+      animation: size 500ms linear forwards;
+      /* transform: scaleX(1.2); */
+    }
+    #check:checked #txt-1{
+      display: none;
+    }
+    @keyframes size {
+    to{
+      transform: scaleX(0.3);
+      border-radius: 50%;
+      background-color: rgb(0, 225, 0);
+      border: rgb(0, 225, 0);
+      box-shadow: 2px 2px 30px rgb(0, 225, 0);
+    }
+  }
+  </style>
+  <body>
+    <div class="parent">
+      <input type="checkbox" id="check" />
+      <div class="container">
+        <label for="check">
+          ...............
+        </label>
+        <span id="txt-1"> submit </span>
+        <span id="txt-2"> <img src="heart-svgrepo-com.svg" alt=""> </span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galss effect</title>
+</head>
+<Style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(bg.jpg);
+        background-size: 100%;
+    }
+    .parent{
+        /* border: 5px solid black; */
+        width: fit-content;
+        height: fit-content;
+        transform: scale(0.8);
+        cursor: pointer;
+        margin: auto;
+        padding: 0;
+        text-transform: capitalize;
+        /* background-repeat: no-repeat; */
+        text-align: center;
+        display: flex;
+        /* justify-content: center; */
+        /* flex-direction: column; */
+        align-items: center;
+        /* height: 100vh; */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .glass{
+        width: 350px;
+        height: 450px;
+        /* border: 2px solid lightgray; */
+        /* background-image: radial-gradient(gray 15%, gray 45%,black 2000%); */
+        /* filter:opacity(0.7) ; */
+        margin-top: 150px;
+        filter: blur(2px);
+        box-shadow: 0 5px 15px black;
+        transition: transform 500ms;
+        border-radius: 20px;
+    }
+    .contents{
+        width: 350px;
+        height: 420px;
+        position: absolute;
+        top: 170px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: transform 500ms;
+    }
+    img{
+        width: 170px;
+        height: 170px;
+        border: 2px solid rgb(0, 0, 0);
+        padding: 5px;
+        border-radius: 10px;
+    }
+    h1{
+        text-transform: uppercase;
+    }
+    .btn{
+        padding: 8px 18px;
+        border-radius: 10px;
+        border: 2px solid black;
+        background: transparent;
+    }
+    .contents:hover{
+        transform: scale(1.2);
+    }    
+    .glass:hover{
+        transform:scale(1.1);
+    }
+    .parent:hover .contents,
+    .parent:hover .glass{
+        transform: scale(1.2);
+    }
+</Style>
+<body>
+    <div class="parent">
+    <div class="glass">
+        
+    </div>
+    <div class="contents">
+        <h1>hello!</h1>
+        <img src="nitish.jpg" alt="profile pic">
+        <p>my name is nitish kumar upadhyay, <br/> a self tought web developer. <br> to learn and explore with me.</p>
+        <button class="btn">follow me</button>
+    </div>
+</div>
+</body>
+</html>

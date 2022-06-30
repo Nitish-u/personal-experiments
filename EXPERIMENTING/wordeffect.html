@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Effect</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgb(0, 0, 0);
+    }
+    .parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 10px;
+    }
+    .word{
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: white;
+        /* padding: 5px 15px; */
+        border-radius: 30px;
+        /* background: linear-gradient(to right,#9753ee, #7253ee); */
+        animation: word-effect 8s infinite ease-in-out;
+    }
+    @keyframes word-effect {
+            0%,5%,100%{
+                filter: blur(0px);
+                opacity: 1;
+            }
+            50%,80%{
+                filter: blur(180px);
+                opacity: 0;
+            }
+    }
+    .word:nth-child(1){
+        animation-delay: -7s;
+        position: absolute;
+    }
+    .word:nth-child(2){
+        animation-delay: -6s;
+        position: absolute;
+        /* opacity: 0; */
+        /* animation: opacity 5s linear forwards; */
+        /* animation-delay: -5s; */
+    }
+    .word:nth-child(3){
+        animation-delay: -5s;
+        position: absolute;
+        /* opacity: 0; */
+        /* animation: opacity 5s linear forwards; */
+        /* animation-delay: 7s; */
+    }
+    .word:nth-child(4){
+        animation-delay: -4s;
+        position: absolute;
+        /* opacity: 0; */
+        /* animation: opacity 5s linear forwards; */
+        /* animation-delay: 8s; */
+    }
+    .word:nth-child(5){
+        animation-delay: -3s;
+        position: absolute;
+        /* opacity: 0; */
+        /* animation: opacity 5s linear forwards; */
+        /* animation-delay: 9s; */
+    }
+    @keyframes opacity {
+        from{
+            /* filter: blur(0); */
+            opacity: 1;
+        }
+        to{
+            filter: blur(100px);
+        }
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="word">hello</div>
+        <div class="word">my</div>
+        <div class="word">name</div>
+        <div class="word">is</div>
+        <div class="word">Nitish kumar upadhyay</div>
+    </div>
+</body>
+</html>

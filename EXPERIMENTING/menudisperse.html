@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .parent {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+      /* position: relative; */
+      /* background-color: rgb(0, 136, 255); */
+      padding: 10px 10px 7px 10px;
+      overflow: hidden;
+    }
+    #icon-1,
+    #icon-2,
+    #icon-3,.hash {
+      display: inline-block;
+      width: fit-content;
+      height: fit-content;
+      overflow: hidden;
+      /* border: 1px solid black; */
+      border-radius: 50%;
+      position: absolute;
+      transition: transform 500ms;
+    }
+    #icon-1{
+      background: linear-gradient(to bottom right, blue,rgb(254, 0, 42) rgb(255, 0, 43));
+    }
+    .container{
+      cursor: pointer;
+    }
+    .hash{
+      padding: 0 13px 0 12px;
+      font-weight: bolder;
+      /* position: relative; */
+      /* color: aqua; */
+      font-size: 45px;
+      background-color: rgb(255, 255, 255);
+    }
+    .container:hover #icon-1 {
+      transform: translatex(-70px);
+    }
+    .container:hover #icon-2 {
+      transform: translateY(-70px);
+    }
+    .container:hover #icon-3 {
+      transform: translateX(70px);
+    }
+    .container:hover .hash {
+      transform: rotate(45deg);
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <div class="container">
+        <div class="icons" id="icon-1">
+          <img src="icons8-instagram-512.svg" alt="" class="icon-1" />
+        </div>
+        <div class="icons" id="icon-2">
+          <img src="icons8-facebook-256.svg" alt="" class="icon-2" />
+        </div>
+        <div class="icons" id="icon-3">
+          <img src="icons8-linkedin-512.svg" alt="" class="icon-3" />
+        </div>
+        <div class="hash">+</div>
+      </div>
+    </div>
+  </body>
+</html>
