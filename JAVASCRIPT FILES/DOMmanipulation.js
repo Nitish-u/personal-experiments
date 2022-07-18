@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const ul = document.getElementsByTagName('li')
 ul[0].style.color = 'white';
 ul[1].style.color = 'white';
@@ -26,3 +27,8 @@ ul[2].style.borderRadius = "20px"
 ul[3].style.borderRadius = "20px"
 ul[4].style.borderRadius = "20px"
 ul[5].style.borderRadius = "20px"
+=======
+const ul = document.querySelector('.class-1')
+// document.write(ul)
+console.log(ul)
+>>>>>>> 0fa71fb1705981fa3779070e58adf8faa152648b
