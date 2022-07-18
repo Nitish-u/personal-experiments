@@ -296,7 +296,6 @@ button{
     width: 25vw;
     height: 100px;
     opacity: 0.5;
-
 }
 .end-content-s5-phase-2{
     display: flex;
@@ -327,15 +326,15 @@ button{
 .heading-s6{
     font-size: 4vw;
     font-weight: bold;
-    padding: 15vw;
+    padding: 50px;
 }
 .cards-s6{
     display: flex;
     justify-content: center;
-    gap: 15vw;
+    gap: 2vw;
 }
 .cards{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     width: 200px;
     height: 300px;
     display: flex;
@@ -344,6 +343,7 @@ button{
     justify-content: space-between;
     box-shadow: 1px 1px 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .speaker{
     width: 100%;
