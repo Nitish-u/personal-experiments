@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .parent{
+        width: 240px;
+        height: 400px;
+        background:linear-gradient( to top right, #5761b2, #1fc5a8);
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    .parent::before{
+        content: "";
+        position: absolute;
+        width: 450px;
+        height: 35px;
+        top: 0;
+        transition: 5s;
+        background: linear-gradient(to right, red 50%, blue 50%);
+        transform: translate(-130px,-25px) rotate(-45deg);
+    }
+    .parent:hover::before{
+        transform: translate(50%, 550px) rotate(-45deg);
+    }
+    .card{
+      background-color: rgb(35, 50, 36);
+      height: 390px;
+      width: 230px;
+      border-radius: 0.75rem;
+      color: #fff;
+      display: flex;
+      z-index: 5;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    p{
+      font-size: 14px;
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <div class="card">
+        <h3>NITISH UPADHYAY</h3>
+        <p>Web Developer</p>
+      </div>
+    </div>
+  </body>
+</html>
