@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+:root{
+    --main_heading_width: 20px;
+
+}
+.menu_1{
+    width: 100vw;
+    background-color: darkgreen;
+}
+.main_headings_list{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.main_headings{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.main_headings:hover{
+    background-color: lightgreen;
+    border-radius: 5px;
+}
+.main_headings:hover summary{
+    color: darkgreen;
+}
+details{
+    position: relative;
+}
+details .subheading_list{
+    position: absolute;
+    padding: 5px 10px;
+    top: 25px;
+    left: -10px;
+    background-color: lightgreen;
+    border-radius: 5px;
+}
+.subheadings:hover{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
