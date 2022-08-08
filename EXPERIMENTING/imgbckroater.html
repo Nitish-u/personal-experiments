@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    img{
-        display: block;
-        width: 200px;
-        height: 200px;
-        margin: auto;
-        margin-top: 30%;
-        border-radius: 50%;
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
     }
-    div{
-        width: 220px;
-        height: 220px;
-        /* background-color: rgb(139, 139, 139); */
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .parent{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        left: 33.4vw;
-        top: -31vh;
-        z-index: -1;
-        border-radius: 50%;
-        border: 10px solid rgb(255, 255, 255);
-        border-bottom: 10px solid rgb(118, 0, 145);
-        border-top: 10px solid rgb(118, 0, 145);
-        animation: roater 3s linear infinite;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .parent::before {
+      content: "";
+      width: 220px;
+      height: 220px;
+      border: 10px solid violet;
+      border-bottom-color: white;
+      border-top-color: white;
+      position: absolute;
+      border-radius: 50%;
+      animation: roater 2s linear infinite;
     }
     @keyframes roater {
-        from{
-            transform: rotate(0deg);
-        }
-        to{
-            transform: rotate(360deg);
-        }
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
-</style>
-<body>
-    <img src="spiderman.jpg" alt="spiderman">
-    <div class="background"></div>
-</body>
+  </style>
+  <body>
+    <div class="parent">
+      <img src="/EXPERIMENTING/IMAGES/spiderman.jpg" alt="spiderman" />
+    </div>
+  </body>
 </html>
