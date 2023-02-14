@@ -9,7 +9,7 @@
   <style>
     .main1 {
       /* margin-top: 20px; */
-      background-image: url(/EXPERIMENTING/IMAGES/bg12.png);
+      background-image: url(/IMAGES/bg12.png);
       background-size: 100%;
       background-repeat: no-repeat;
       color: white;
@@ -67,7 +67,7 @@
       /* margin-top: 10px; */
     }
     .second {
-      background-image: url(/EXPERIMENTING/IMAGES/bg12.png);
+      background-image: url(/IMAGES/bg12.png);
       background-size: 100%;
       width: 100%;
       display: flex;
@@ -94,7 +94,7 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      background-image: url(/EXPERIMENTING/IMAGES/BG222.png);
+      background-image: url(/IMAGES/BG222.png);
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -234,7 +234,7 @@
       color: rgb(84, 214, 84);
     }
     .main6{
-      background-image: url(/EXPERIMENTING/IMAGES/77.jpg);
+      background-image: url(/IMAGES/77.jpg);
       background-size: 60%;
       background-repeat: no-repeat;
       background-position: right;
@@ -277,7 +277,7 @@
       <div class="h1">
         <div class="dk">
           <div>
-            <img src="/EXPERIMENTING/IMAGES/logo11.jpg" alt="" />
+            <img src="/IMAGES/logo11.jpg" alt="" />
           </div>
           <div>
             <ul>
@@ -292,7 +292,7 @@
           </div>
         </div>
         <div>
-          <button class=".btn">Contect us</button>
+          <button class=".btn"><a href="wootcontact.html" style="color:aqua; text-decoration: none;">Contact us</a></button>
         </div>
       </div>
     </div>
@@ -307,12 +307,12 @@
         </p>
       </div>
       <div class="para22">
-        <img src="/EXPERIMENTING/IMAGES/11.jpg" alt="" />
+        <img src="/IMAGES/11.jpg" alt="" />
       </div>
     </div>
     <div class="main2">
       <div class="m1">
-        <img src="/EXPERIMENTING/IMAGES/22.jpg" alt="" />
+        <img src="/IMAGES/22.jpg" alt="" />
       </div>
       <div class="m2">
         <div class="para2">
@@ -351,63 +351,63 @@
           aliquam! Quas exercitationem temporibus cupiditate iure delectus enim
           tempora?
         </p>
-        <button>Learn About Our Value</button>
+        <button><a href="aboutus.html">Learn About Our Value</a></button>
       </div>
       <div class="n2">
-        <img src="/EXPERIMENTING/IMAGES/33.jpg" alt="" />
+        <img src="/IMAGES/33.jpg" alt="" />
       </div>
     </div>
     <div class="main4">
       <h3>COVERING ALL ACROSS INDUSTRIES</h3>
       <div class="main41">
         <div>
-          <img src="/EXPERIMENTING/IMAGES/AGRI.jpg" alt="" />
+          <img src="/IMAGES/AGRI.jpg" alt="" />
           <h6>AGRICULTURE</h6>
         </div>
         <div>
-          <img src="/EXPERIMENTING/IMAGES/MEDIA.jpg" alt="" />
+          <img src="/IMAGES/MEDIA.jpg" alt="" />
           <h6>MEDIA</h6>
         </div>
         <div>
-          <img src="/EXPERIMENTING/IMAGES/CONST.jpg" alt="" />
+          <img src="/IMAGES/CONST.jpg" alt="" />
           <h6>CONSTRUCTION</h6>
         </div>
         <div>
-          <img src="/EXPERIMENTING/IMAGES/EDU.jpg" alt="" />
+          <img src="/IMAGES/EDU.jpg" alt="" />
           <h6>EDUCATION</h6>
         </div>
         <div>
-          <img src="/EXPERIMENTING/IMAGES/FIN.jpg" alt="" />
+          <img src="/IMAGES/FIN.jpg" alt="" />
           <h6>FINANCE</h6>
         </div>
         <div class="last">
-          <img src="/EXPERIMENTING/IMAGES/MAN.jpg" alt="" />
+          <img src="/IMAGES/MAN.jpg" alt="" />
           <h6>MANUFACTURE</h6>
         </div>
       </div>
       <div class="main42">
         <div>
-          <img src="/EXPERIMENTING/IMAGES/NP.jpg" alt="" />
+          <img src="/IMAGES/NP.jpg" alt="" />
           <h6>NON-PROFIT</h6>
         </div>
         <div>
-          <img src="/EXPERIMENTING/IMAGES/OIL.jpg" alt="" />
+          <img src="/IMAGES/OIL.jpg" alt="" />
           <h6>OIL & GAS</h6>
         </div>
         <div>
-          <img src="/EXPERIMENTING/IMAGES/RETAIL.jpg" alt="" />
+          <img src="/IMAGES/RETAIL.jpg" alt="" />
           <h6>RETAIL</h6>
         </div>
         <div>
-          <img src="/EXPERIMENTING/IMAGES/SERV.jpg" alt="" />
+          <img src="/IMAGES/SERV.jpg" alt="" />
           <h6>SERVICES</h6>
         </div>
         <div>
-          <img src="/EXPERIMENTING/IMAGES/UTI.jpg" alt="" />
+          <img src="/IMAGES/UTI.jpg" alt="" />
           <h6>UTILITIES</h6>
         </div>
         <div class="last">
-          <img src="/EXPERIMENTING/IMAGES/TECH.jpg" alt="" />
+          <img src="/IMAGES/TECH.jpg" alt="" />
           <h6>TECHNOLOGY</h6>
         </div>
       </div>
@@ -417,7 +417,7 @@
     </div>
     <div class="main5">
       <div>
-        <img src="/EXPERIMENTING/IMAGES/44.jpg" alt="" />
+        <img src="/IMAGES/44.jpg" alt="" />
         <h3>NEWS</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
@@ -426,7 +426,7 @@
         <a href="#">Read our newest upadtes</a>
       </div>
       <div>
-        <img src="/EXPERIMENTING/IMAGES/55.jpg" alt="" />
+        <img src="/IMAGES/55.jpg" alt="" />
         <h3>PRODUCTS</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
@@ -435,7 +435,7 @@
         <a href="#">More on our Products</a>
       </div>
       <div>
-        <img src="/EXPERIMENTING/IMAGES/66.jpg" id="drop-shadow" alt="" />
+        <img src="/IMAGES/66.jpg" id="drop-shadow" alt="" />
         <h3>CARRIERS</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
@@ -457,7 +457,7 @@
               asperiores perspiciatis numquam.
             </p>
           </div>
-          <button>contact us</button>
+          <button><a href="wc.html">contact us</a></button>
         </div>
       </div>
     </div>
