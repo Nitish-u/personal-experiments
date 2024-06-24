@@ -1,0 +1,37 @@
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 80%;
+    border-radius: 1rem;
+}
+h1{
+    border-radius: 1rem 1rem 0 0;
+    background-color: purple;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+}
+p{
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+button{
+    margin: 0 1rem 1rem auto;
+    display: block;
+    padding: 0.5rem;
+    width: 8rem;
+    background-color: purple;
+    outline: none;
+    border: 2px solid purple;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+button:active{
+    background-color: white;
+    color: purple;
+}

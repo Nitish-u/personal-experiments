@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBamk</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.conatiner{
+    width: 25rem;
+    background-color: rgb(46, 46, 46);
+    padding: 5rem 2rem;
+    color: white;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: fit-content;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+input{
+    padding: 0.5rem;
+}
+</style>
+<body>
+  <div class="conatiner">
+    <p><img src="../assets/logo.png" alt="Definity logo"></p>
+    <h1>Current Balance : $ <span id="value">234</span></h1>
+    <div class="divider"></div>
+    <form action="#">
+      <label for="topUp">Amount to TopUp :</label>
+      <input type="number" placeholder="TopUp Amount" id="topUp" name="topUp">
+      <label for="withdrawl">Amount to Withdrawl :</label>
+      <input type="number" placeholder="Withdrawl Amount" id="withdrawl" name="withdrawl">
+      <input type="submit" value="Submit" id="SubBtn">
+    </form>
+  </div>
+</body>
+</html>

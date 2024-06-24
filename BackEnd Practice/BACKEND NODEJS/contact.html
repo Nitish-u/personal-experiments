@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+<link rel="stylesheet" href="./help.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/contact">Contact</li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/help">Help</a></li>
+    </ul>
+  </nav>
+  <main>
+    <form method="post" action="/contact">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required style="resize: vertical;"></textarea><br>
+      <!-- <button type="submit" style="width: 100%; padding: 0.5rem 0; background-color: rgb(0, 255, 0);">send</button> -->
+      <input type="submit" value="send">
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>

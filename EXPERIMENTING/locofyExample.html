@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <style>
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-base: 1rem;
+  --font-size-5xl: 1.5rem;
+
+  /* Colors */
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-5xs: 0.5rem;
+  --gap-2xs: 0.69rem;
+
+  /* Paddings */
+  --padding-base: 1rem;
+  --padding-2xs: 0.69rem;
+
+  /* border radiuses */
+  --br-base: 16px;
+}
+
+        .heading {
+  position: relative;
+}
+.heading-wrapper {
+  width: 6.94rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lorem-ipsum-dolor {
+  position: relative;
+  font-weight: 300;
+  display: inline-block;
+  width: 16rem;
+}
+.frame,
+.frame-group {
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.frame {
+  width: 16rem;
+  height: 25.94rem;
+  align-items: center;
+  gap: var(--gap-5xs);
+  font-size: var(--font-size-base);
+}
+.frame-group {
+  border-radius: var(--br-base);
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  width: 18rem;
+  height: 30.13rem;
+  padding: var(--padding-base) var(--padding-base) var(--padding-2xs);
+  align-items: flex-start;
+  gap: var(--gap-2xs);
+}
+.component-wrapper,
+.heading-wrapper4,
+.instance-container,
+.instance-frame,
+.instance-wrapper,
+.instance-wrapper1,
+.instance-wrapper2 {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading-wrapper4,
+.instance-container,
+.instance-frame,
+.instance-wrapper,
+.instance-wrapper1,
+.instance-wrapper2 {
+  top: 32.13rem;
+}
+.heading-wrapper4,
+.instance-container,
+.instance-frame,
+.instance-wrapper1,
+.instance-wrapper2 {
+  top: 41.69rem;
+  left: 20rem;
+}
+.heading-wrapper4,
+.instance-frame,
+.instance-wrapper1,
+.instance-wrapper2 {
+  top: 32.13rem;
+  left: 39rem;
+}
+.heading-wrapper4,
+.instance-wrapper1,
+.instance-wrapper2 {
+  top: 23.13rem;
+  left: 58rem;
+}
+.heading-wrapper4,
+.instance-wrapper2 {
+  top: 32.13rem;
+  left: 77rem;
+}
+.heading-wrapper4 {
+  top: 1rem;
+  left: 1rem;
+  width: 6.94rem;
+  overflow: hidden;
+  font-size: var(--font-size-5xl);
+}
+.lorem-ipsum-dolor18,
+.lorem-ipsum-dolor19,
+.lorem-ipsum-dolor20,
+.lorem-ipsum-dolor21 {
+  position: absolute;
+  top: 3.5rem;
+  left: 1rem;
+  font-weight: 300;
+  display: inline-block;
+  width: 16rem;
+}
+.lorem-ipsum-dolor19,
+.lorem-ipsum-dolor20,
+.lorem-ipsum-dolor21 {
+  top: 12.31rem;
+}
+.lorem-ipsum-dolor20,
+.lorem-ipsum-dolor21 {
+  top: 30.13rem;
+}
+.lorem-ipsum-dolor21 {
+  top: 21.13rem;
+}
+.frame-parent4 {
+  position: relative;
+  border-radius: var(--br-base);
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  width: 18rem;
+  height: 39.69rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame-wrapper {
+  position: absolute;
+  top: 1rem;
+  left: 20rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-base);
+}
+.frame-parent5 {
+  position: relative;
+  border-radius: var(--br-base);
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  width: 18rem;
+  height: 30.13rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame-wrapper1 {
+  position: absolute;
+  top: 1rem;
+  left: 39rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-base);
+}
+.frame-parent6,
+.heading-wrapper6 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.heading-wrapper6 {
+  width: 6.94rem;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-5xl);
+}
+.frame-parent6 {
+  border-radius: var(--br-base);
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  width: 18rem;
+  height: 21.13rem;
+  flex-shrink: 0;
+  padding: var(--padding-base) var(--padding-base) 0.63rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.frame-wrapper2,
+.frame-wrapper3 {
+  position: absolute;
+  top: 1rem;
+  left: 58rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-base);
+}
+.frame-wrapper3 {
+  left: 77rem;
+}
+.frame-parent {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 72.81rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="frame-parent">
+      <div class="component-wrapper">
+        <div class="frame-group">
+          <div class="heading-wrapper">
+            <b class="heading">HEADING</b>
+          </div>
+          <div class="frame">
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="instance-wrapper">
+        <div class="frame-group">
+          <div class="heading-wrapper">
+            <b class="heading">HEADING</b>
+          </div>
+          <div class="frame">
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="instance-container">
+        <div class="frame-group">
+          <div class="heading-wrapper">
+            <b class="heading">HEADING</b>
+          </div>
+          <div class="frame">
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="instance-frame">
+        <div class="frame-group">
+          <div class="heading-wrapper">
+            <b class="heading">HEADING</b>
+          </div>
+          <div class="frame">
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="instance-wrapper1">
+        <div class="frame-group">
+          <div class="heading-wrapper">
+            <b class="heading">HEADING</b>
+          </div>
+          <div class="frame">
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="instance-wrapper2">
+        <div class="frame-group">
+          <div class="heading-wrapper">
+            <b class="heading">HEADING</b>
+          </div>
+          <div class="frame">
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+            <div class="lorem-ipsum-dolor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              magnam est inventore earum enim ad mollitia? Explicabo modi ipsa
+              blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+              excepturi mollitia illo?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="frame-wrapper">
+        <div class="frame-parent4">
+          <div class="heading-wrapper4">
+            <b class="heading">HEADING</b>
+          </div>
+          <div class="lorem-ipsum-dolor18">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+          <div class="lorem-ipsum-dolor19">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+          <div class="lorem-ipsum-dolor20">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+          <div class="lorem-ipsum-dolor21">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+        </div>
+      </div>
+      <div class="frame-wrapper1">
+        <div class="frame-parent5">
+          <div class="heading-wrapper4">
+            <b class="heading">HEADING</b>
+          </div>
+          <div class="lorem-ipsum-dolor18">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+          <div class="lorem-ipsum-dolor21">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+          <div class="lorem-ipsum-dolor19">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+        </div>
+      </div>
+      <div class="frame-wrapper2">
+        <div class="frame-parent6">
+          <div class="heading-wrapper6">
+            <b class="heading">HEADING</b>
+          </div>
+          <div class="lorem-ipsum-dolor">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+          <div class="lorem-ipsum-dolor">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+        </div>
+      </div>
+      <div class="frame-wrapper3">
+        <div class="frame-parent5">
+          <div class="heading-wrapper4">
+            <b class="heading">HEADING</b>
+          </div>
+          <div class="lorem-ipsum-dolor18">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+          <div class="lorem-ipsum-dolor21">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+          <div class="lorem-ipsum-dolor19">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam
+            est inventore earum enim ad mollitia? Explicabo modi ipsa
+            blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti
+            excepturi mollitia illo?
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

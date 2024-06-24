@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            width: 18rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            border: 2px solid black;
+            border-radius: 1rem;
+            height: fit-content;
+        }
+        .heading{
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: grey;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+        }
+        .lines{
+            background-color: rgb(255, 107, 193);
+            color: white;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+        }
+        .heading{
+            margin-top: 0;
+        }
+        .lines:last-child{
+            margin-bottom: 0;
+        }
+        .parent{
+            padding: 1rem;
+            /* display: grid;
+            grid-template-columns: repeat(5, 18rem);
+            grid-template-rows: repeat(auto,auto); */
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="card">
+            <div class="heading">Heading-1</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam est inventore earum enim ad mollitia? Explicabo modi ipsa blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti excepturi mollitia illo?</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam est inventore earum enim ad mollitia? Explicabo modi ipsa blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti excepturi mollitia illo?</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam est inventore earum enim ad mollitia? Explicabo modi ipsa blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti excepturi mollitia illo?</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam est inventore earum enim ad mollitia? Explicabo modi ipsa blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti excepturi mollitia illo?</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magnam est inventore earum enim ad mollitia? Explicabo modi ipsa blanditiis, aliquid hic odio quibusdam, quisquam aperiam corrupti excepturi mollitia illo?</div>
+        </div>
+        <div class="card">
+            <div class="heading">Heading-2</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni unde quibusdam suscipit earum modi quos iusto corrupti dolorum ipsam. Accusamus sequi voluptatum, fuga nemo impedit repellendus quae optio quaerat omnis!</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni unde quibusdam suscipit earum modi quos iusto corrupti dolorum ipsam. Accusamus sequi voluptatum, fuga nemo impedit repellendus quae optio quaerat omnis!</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni unde quibusdam suscipit earum modi quos iusto corrupti dolorum ipsam. Accusamus sequi voluptatum, fuga nemo impedit repellendus quae optio quaerat omnis!</div>
+        </div>
+        <div class="card">
+            <div class="heading">Heading-3</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates ipsum distinctio blanditiis enim sed sequi veritatis quaerat error voluptate? Tempora quam mollitia, dicta non aspernatur ea ad? Odio, rerum?</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates ipsum distinctio blanditiis enim sed sequi veritatis quaerat error voluptate? Tempora quam mollitia, dicta non aspernatur ea ad? Odio, rerum?</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates ipsum distinctio blanditiis enim sed sequi veritatis quaerat error voluptate? Tempora quam mollitia, dicta non aspernatur ea ad? Odio, rerum?</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates ipsum distinctio blanditiis enim sed sequi veritatis quaerat error voluptate? Tempora quam mollitia, dicta non aspernatur ea ad? Odio, rerum?</div>
+        </div>
+        <div class="card">
+            <div class="heading">Heading-4</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, animi aspernatur enim doloribus, at impedit voluptate nam voluptates id beatae ipsum saepe natus provident eaque veniam facere et molestiae eum!</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, animi aspernatur enim doloribus, at impedit voluptate nam voluptates id beatae ipsum saepe natus provident eaque veniam facere et molestiae eum!</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, animi aspernatur enim doloribus, at impedit voluptate nam voluptates id beatae ipsum saepe natus provident eaque veniam facere et molestiae eum!</div>
+        </div>
+        <div class="card">
+            <div class="heading">Heading-5</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat molestias repellat praesentium unde error. Beatae eum natus ullam, sapiente reiciendis voluptates saepe in, ratione sequi eligendi rerum nobis et?</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat molestias repellat praesentium unde error. Beatae eum natus ullam, sapiente reiciendis voluptates saepe in, ratione sequi eligendi rerum nobis et?</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat molestias repellat praesentium unde error. Beatae eum natus ullam, sapiente reiciendis voluptates saepe in, ratione sequi eligendi rerum nobis et?</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat molestias repellat praesentium unde error. Beatae eum natus ullam, sapiente reiciendis voluptates saepe in, ratione sequi eligendi rerum nobis et?</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat molestias repellat praesentium unde error. Beatae eum natus ullam, sapiente reiciendis voluptates saepe in, ratione sequi eligendi rerum nobis et?</div>
+        </div>
+        <div class="card">
+            <div class="heading">Heading-6</div>
+            <div class="lines">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque modi praesentium accusantium officia atque libero perspiciatis veniam iure blanditiis, culpa eligendi ipsum animi eius excepturi, distinctio laboriosam iusto quisquam?</div>
+            <div class="lines">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque modi praesentium accusantium officia atque libero perspiciatis veniam iure blanditiis, culpa eligendi ipsum animi eius excepturi, distinctio laboriosam iusto quisquam?</div>
+            <div class="lines">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque modi praesentium accusantium officia atque libero perspiciatis veniam iure blanditiis, culpa eligendi ipsum animi eius excepturi, distinctio laboriosam iusto quisquam?</div>
+            <div class="lines">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque modi praesentium accusantium officia atque libero perspiciatis veniam iure blanditiis, culpa eligendi ipsum animi eius excepturi, distinctio laboriosam iusto quisquam?</div>
+            <div class="lines">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque modi praesentium accusantium officia atque libero perspiciatis veniam iure blanditiis, culpa eligendi ipsum animi eius excepturi, distinctio laboriosam iusto quisquam?</div>
+            <div class="lines">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque modi praesentium accusantium officia atque libero perspiciatis veniam iure blanditiis, culpa eligendi ipsum animi eius excepturi, distinctio laboriosam iusto quisquam?</div>
+        </div>
+        <div class="card">
+            <div class="heading">Heading-7</div>
+            <div class="lines">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ratione ab dolores praesentium nulla! Impedit ut ratione temporibus veritatis assumenda quibusdam nostrum maxime. Quas nostrum culpa animi, accusamus dolor sunt.</div>
+            <div class="lines">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ratione ab dolores praesentium nulla! Impedit ut ratione temporibus veritatis assumenda quibusdam nostrum maxime. Quas nostrum culpa animi, accusamus dolor sunt.</div>
+            <div class="lines">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ratione ab dolores praesentium nulla! Impedit ut ratione temporibus veritatis assumenda quibusdam nostrum maxime. Quas nostrum culpa animi, accusamus dolor sunt.</div>
+            <div class="lines">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ratione ab dolores praesentium nulla! Impedit ut ratione temporibus veritatis assumenda quibusdam nostrum maxime. Quas nostrum culpa animi, accusamus dolor sunt.</div>
+            <div class="lines">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ratione ab dolores praesentium nulla! Impedit ut ratione temporibus veritatis assumenda quibusdam nostrum maxime. Quas nostrum culpa animi, accusamus dolor sunt.</div>
+            <div class="lines">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ratione ab dolores praesentium nulla! Impedit ut ratione temporibus veritatis assumenda quibusdam nostrum maxime. Quas nostrum culpa animi, accusamus dolor sunt.</div>
+        </div>
+        <div class="card">
+            <div class="heading">Heading-8</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum vel, deleniti voluptate aliquid expedita est, qui ab error et neque eaque culpa maxime natus, ducimus ut. Necessitatibus, nesciunt at.</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum vel, deleniti voluptate aliquid expedita est, qui ab error et neque eaque culpa maxime natus, ducimus ut. Necessitatibus, nesciunt at.</div>
+        </div>
+        <div class="card">
+            <div class="heading">Heading-9</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime, reprehenderit culpa placeat molestiae fuga suscipit veritatis labore aliquam laboriosam voluptate? Consequatur eius tempore veritatis tempora doloribus omnis reiciendis impedit.</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime, reprehenderit culpa placeat molestiae fuga suscipit veritatis labore aliquam laboriosam voluptate? Consequatur eius tempore veritatis tempora doloribus omnis reiciendis impedit.</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime, reprehenderit culpa placeat molestiae fuga suscipit veritatis labore aliquam laboriosam voluptate? Consequatur eius tempore veritatis tempora doloribus omnis reiciendis impedit.</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime, reprehenderit culpa placeat molestiae fuga suscipit veritatis labore aliquam laboriosam voluptate? Consequatur eius tempore veritatis tempora doloribus omnis reiciendis impedit.</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime, reprehenderit culpa placeat molestiae fuga suscipit veritatis labore aliquam laboriosam voluptate? Consequatur eius tempore veritatis tempora doloribus omnis reiciendis impedit.</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime, reprehenderit culpa placeat molestiae fuga suscipit veritatis labore aliquam laboriosam voluptate? Consequatur eius tempore veritatis tempora doloribus omnis reiciendis impedit.</div>
+        </div>
+        <div class="card">
+            <div class="heading">Heading-10</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos hic fugit quibusdam soluta, laborum vero, similique modi delectus blanditiis dolore tempore aliquid mollitia quo neque itaque eveniet quaerat iure!</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos hic fugit quibusdam soluta, laborum vero, similique modi delectus blanditiis dolore tempore aliquid mollitia quo neque itaque eveniet quaerat iure!</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos hic fugit quibusdam soluta, laborum vero, similique modi delectus blanditiis dolore tempore aliquid mollitia quo neque itaque eveniet quaerat iure!</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos hic fugit quibusdam soluta, laborum vero, similique modi delectus blanditiis dolore tempore aliquid mollitia quo neque itaque eveniet quaerat iure!</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos hic fugit quibusdam soluta, laborum vero, similique modi delectus blanditiis dolore tempore aliquid mollitia quo neque itaque eveniet quaerat iure!</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos hic fugit quibusdam soluta, laborum vero, similique modi delectus blanditiis dolore tempore aliquid mollitia quo neque itaque eveniet quaerat iure!</div>
+            <div class="lines">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos hic fugit quibusdam soluta, laborum vero, similique modi delectus blanditiis dolore tempore aliquid mollitia quo neque itaque eveniet quaerat iure!</div>
+        </div>
+    </div>
+</body>
+</html>

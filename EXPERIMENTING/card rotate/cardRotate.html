@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card rotate</title>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="card" id="cardParent">
+        <div class="card__inner">
+            <div class="front">
+                <h3>Explore the Great Outdoors</h3>
+                <p>Discover Nature's Beauty</p>
+            </div>
+            <div class="back">
+                <p>Embark on an adventure and immerse yourself in the wonders of the natural world. From towering
+                    mountains to lush forests and tranquil lakes, there's so much to explore and experience. Whether
+                    you're an avid hiker, a wildlife enthusiast, or simply seeking moments of serenity, nature offers
+                    something for everyone. Take a break from the hustle and bustle of daily life and reconnect with the
+                    world around you. Let the fresh air rejuvenate your spirit as you create unforgettable memories
+                    amidst breathtaking landscapes. Start your journey today and discover the magic of the great
+                    outdoors.
+                </p>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+
+    .card {
+        width: 15rem;
+        height: 25rem;
+        text-align: center;
+        position: relative;
+    }
+    .card__inner{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .front{
+        background: rgb(103, 103, 103);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        backface-visibility: hidden;
+        transition: 2s;
+        border-radius:1rem;
+        padding: 0.5rem;
+    }
+    
+    .back{
+        background: rgb(82, 146, 255);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        backface-visibility: hidden;
+        transition: 2s;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: rotateY(180deg);
+        border-radius:1rem;
+        padding: 0.5rem;
+    }
+
+    /* .card:hover .back{
+        transform: perspective(1000px) rotateY(359.99deg);
+    }
+
+    .card:hover .front{
+        transform: perspective(1000px) rotateY(180deg);
+    } */
+</style>
+</html>

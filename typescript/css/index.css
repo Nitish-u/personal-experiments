@@ -1,0 +1,50 @@
+:root{
+    --primaryColor : rgb(255, 49, 83);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 3rem;
+    padding: 3rem;
+    text-align: center;
+    color: var(--primaryColor);
+}
+input,button,select{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+button{
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    width: 6rem;
+}
+.child{
+    height: 18rem;
+    background-color: rgb(215, 215, 215);
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+form{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+label{
+    padding-bottom: 1rem;
+}
+.containers{
+    display: flex;
+    flex-direction:column;
+}

@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 1.5rem;
+    width: 12rem;
+    padding: .5rem;
+    border-radius: 5rem;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+button:active{
+    transform: scale(0.98);
+}
+
+.btns{
+    display: flex;
+    gap: 1rem;
+}
+h1{
+    font-size: 5rem;
+    text-align: center;
+}
+.green{
+    color: green;
+}
+.yellow{
+    color: yellow;
+}
+.red{
+    color: red;
+}
